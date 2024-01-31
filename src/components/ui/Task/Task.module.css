@@ -1,0 +1,25 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px dashed #d7dde9;
+
+  padding: 16px;
+}
+
+.task:hover {
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #f7f9fd;
+  background: #f7f9fd;
+}
+
+.taskCheckboxAndText {
+  display: flex;
+  gap: 16px;
+}
+
+.taskDeleteIcon {
+  display: flex;
+}

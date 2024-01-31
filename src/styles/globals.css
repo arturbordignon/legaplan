@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap");
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --button-add-new-task: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+}
+
+:focus {
+  outline: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
