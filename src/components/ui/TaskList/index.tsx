@@ -5,8 +5,6 @@ import Task from "../Task";
 import styles from "./TaskList.module.css";
 import { useState } from "react";
 import Modal from "../Modal";
-import Image from "next/image";
-import EmptyTaskIcon from "../../../public/assets/Clipboard.png";
 
 export default function TaskList() {
   const { tasks, toggleUpdateTaskIsCompleted, deleteTask, addNewTask } = useTasks();
