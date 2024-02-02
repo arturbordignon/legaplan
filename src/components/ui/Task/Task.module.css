@@ -17,9 +17,40 @@
 
 .taskCheckboxAndText {
   display: flex;
+  align-items: center;
   gap: 16px;
+  flex: 1;
+  min-width: 0;
+}
+
+.taskDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: var(--line-height-text);
+  color: var(--text-color);
+  letter-spacing: var(--letter-spacing);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  flex: 1;
+  min-width: 0;
+}
+
+.completedTaskDescription {
+  font-size: 16px;
+  line-height: var(--line-height-text);
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  color: #0000008a;
+  text-decoration: line-through;
 }
 
 .taskDeleteIcon {
-  display: flex;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .task {
+    gap: 8px;
+  }
 }

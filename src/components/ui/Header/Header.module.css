@@ -9,13 +9,16 @@
 }
 
 .headerContainer {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
 .logo {
+  position: absolute;
+  left: 0;
   display: flex;
   align-items: center;
   gap: 10.44px;
@@ -24,15 +27,40 @@
 .welcomeMessage {
   font-size: 24px;
   font-weight: 500;
-  letter-spacing: -0.32px;
+  letter-spacing: var(--letter-spacing);
   line-height: 29px;
+  text-align: center;
 }
 
 .dateOfTheDay {
+  position: absolute;
+  right: 0;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
-  letter-spacing: -0.32px;
+  line-height: var(--line-height-text);
+  letter-spacing: var(--letter-spacing);
   text-align: left;
   color: #0000008a;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 272px;
+  }
+  .headerContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .logo,
+  .welcomeMessage,
+  .dateOfTheDay {
+    position: static;
+    width: auto;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .welcomeMessage {
+    text-align: start;
+  }
 }

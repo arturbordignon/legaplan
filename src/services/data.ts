@@ -10,6 +10,15 @@ export interface TaskProps {
   onDeleteTask: (id: string) => void;
 }
 
+export interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onSubmit: () => void;
+  newTaskName: string;
+  setNewTaskName: (name: string) => void;
+  isDeleteTaskModal: boolean;
+}
+
 const readTasksFromLocalStorage = (): Task[] => {
   const tasksJson = localStorage.getItem("tasks");
   return tasksJson ? JSON.parse(tasksJson) : [];

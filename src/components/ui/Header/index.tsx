@@ -11,6 +11,7 @@ export default function Header() {
           <Image src={Logomark} alt="Logo da FocalPoint" />
           <Image src={Logotype} alt="Logotipo da FocalPoint" />
         </div>
+
         <span>
           <h3 className={styles.welcomeMessage}>Bem-vindo de volta, Marcus</h3>
         </span>

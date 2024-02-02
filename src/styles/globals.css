@@ -3,7 +3,13 @@
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
+
   --button-add-new-task: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+  --button-delete-task: linear-gradient(90deg, #d30707 0%, #f05353 68.65%);
+
+  --letter-spacing: -0.32px;
+
+  --line-height-text: 19px;
 }
 
 :focus {
@@ -27,7 +33,7 @@ textarea,
 button {
   font-family: "Inter Tight", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .app {
@@ -35,4 +41,10 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    margin-top: 24px;
+  }
 }

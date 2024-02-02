@@ -10,7 +10,6 @@
   flex-direction: column;
   width: 450px;
   border: 1px solid #eaecf0;
-  box-shadow: 0px 0px 0px 4px #f4ebff;
   gap: 24px;
   box-shadow: 0px 1px 2px 0px #1018280d;
   border-radius: 16px;
@@ -20,20 +19,43 @@
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19px;
-  letter-spacing: -0.32px;
+  line-height: var(--line-height-text);
+  letter-spacing: var(--letter-spacing);
   color: #0000008a;
+}
+
+.tasksGap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .buttonToAddTask {
   width: 100%;
   height: 51px;
   font-size: 16px;
-  background: linear-gradient(90deg, #0796d3 0%, #53c0f0 68.65%);
+  background: var(--button-add-new-task);
   color: #ffffff;
-  letter-spacing: -0.32px;
+  letter-spacing: var(--letter-spacing);
   border-radius: 8px;
   padding: 16px, 24px, 16px, 24px;
   border: none;
   cursor: pointer;
+}
+
+.noTasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .taskCard {
+    width: 272px;
+    padding: 24px;
+  }
+  .tasksGap {
+    gap: 8px;
+  }
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { Task, allTaskServices } from "@/lib/data";
+import { Task, allTaskServices } from "@/services/data";
 
 const useTasks = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
